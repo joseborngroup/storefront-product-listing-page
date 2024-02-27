@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
-const lumaPort = 8081;
+const lumaPort = 8080;
 const PORT = process.env.PORT || lumaPort;
 
 const banner = `${pkg.name}@v${pkg.version}`;
