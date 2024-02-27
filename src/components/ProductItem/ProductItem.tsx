@@ -321,6 +321,12 @@ export const ProductItem: FunctionComponent<ProductProps> = ({
               <div className="ds-sdk-product-item__product-name mt-md text-sm text-primary">
                 {product.name !== null && htmlStringDecode(product.name)}
               </div>
+              <div className="plp-bazaarvoice">
+                <div data-bv-show="inline_rating"
+                    data-bv-seo="false"
+                    data-bv-product-id={product.sku}
+                    data-bv-redirect-url={productUrl as string}></div>
+              </div>
               <ProductPrice
                 item={refinedProduct ?? item}
                 isBundle={isBundle}
